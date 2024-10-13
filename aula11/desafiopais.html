@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origem</title>
+</head>
+<body>
+    <h1>De onde Você vem?</h1>
+    Coloque o país de sua origem<strong>:</strong> <input type="text" name="pais" id="pais">
+    <input type="button" value="Consultar" onclick="cidadania()">
+    <div id="result">
+
+    </div>
+
+    <script>
+        function cidadania(){
+            var pais = window.document.getElementById('pais');
+            var result = window.document.querySelector(`div#result`) ;
+            if(pais = 'Brasil'){
+               result.innerText += `Você é Brasileiro!`;
+            } else {
+                result.innerText += `Você é Estrangeiro!` ;
+            }
+        } ;
+    </script>
+</body>
+</html>
